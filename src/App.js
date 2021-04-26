@@ -1,25 +1,32 @@
 import logo from './logo.svg';
 import './App.css';
+import Test from './Test.js';
+import Msg from './Msg';
+import Message from './Message';
+import Increment from './Increment'
+import React,{Component} from 'react';
+import Event from './Event'
+import Conditional from './Conditional'
 
-function App() {
+import ListRender from './ListRender';
+import ListOutput from './ListOutput';
+
+class App extends Component {
+  render(){
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <div>
+      {/* <Test name="Priya"></Test> */}
+     {/* <Message/>
+      <Increment/>
+      <Event></Event>
+
+<Conditional></Conditional> */}
+{/* <LifeCycleA></LifeCycleA> */}
+{/* <ListRender></ListRender> */}
+<ListOutput></ListOutput>
+     </div>
   );
+  }
 }
 
 export default App;
